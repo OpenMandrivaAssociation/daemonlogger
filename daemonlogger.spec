@@ -30,7 +30,7 @@ tap mode (using the -I switch) then logging to disk is disabled.
 %setup -q
 
 %build 
-%configure
+./configure --with-libpcap-*
 %make
 
 %install
