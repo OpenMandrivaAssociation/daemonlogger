@@ -9,8 +9,7 @@ License: GPLv3
 Group: Monitoring
 Source: http://www.snort.org/users/roesch/code/%{name}-%{version}.tar.gz
 URL:	http://www.snort.org/users/roesch/Site/Daemonlogger/Daemonlogger.html
-BuildRequires: libpcap libdnet libdnet-devel
-Requires: libpcap libdnet
+BuildRequires: libpcap libdnet libdnet-devel libpcap-devel
 BuildRoot: %_tmppath/%{name}-%{version}-buildroot
 
 %description
@@ -30,7 +29,7 @@ tap mode (using the -I switch) then logging to disk is disabled.
 %setup -q
 
 %build 
-./configure --with-libpcap-*
+./configure --with-libpcap-libraries=%{_libdir}/
 %make
 
 %install
