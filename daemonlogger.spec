@@ -43,3 +43,12 @@ rm -rf %{buildroot}
 %defattr(-, root, root)
 %doc README COPYING
 %attr(0700,root,root) %{_sbindir}/%{name}
+
+
+%changelog
+* Fri Jun 10 2011 Leonardo Coelho <leonardoc@mandriva.com> 1.2.1-1mdv2011.0
++ Revision: 684167
+- add new dependency
+- first mandriva version
+- Created package structure for daemonlogger.
+
