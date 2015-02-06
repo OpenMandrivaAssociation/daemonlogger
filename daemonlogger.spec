@@ -4,7 +4,7 @@
 Name: %{name}
 Summary: Simple packet logging daemon
 Version: %{version}
-Release: %mkrel 1
+Release: 2
 License: GPLv3
 Group: Monitoring
 Source: http://www.snort.org/users/roesch/code/%{name}-%{version}.tar.gz
