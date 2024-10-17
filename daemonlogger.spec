@@ -8,7 +8,7 @@ Release: 2
 License: GPLv3
 Group: Monitoring
 Source: http://www.snort.org/users/roesch/code/%{name}-%{version}.tar.gz
-URL:	http://www.snort.org/users/roesch/Site/Daemonlogger/Daemonlogger.html
+URL:	https://www.snort.org/users/roesch/Site/Daemonlogger/Daemonlogger.html
 BuildRequires: libpcap libdnet libdnet-devel libpcap-devel
 BuildRoot: %_tmppath/%{name}-%{version}-buildroot
 
